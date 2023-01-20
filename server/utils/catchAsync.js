@@ -1,4 +1,4 @@
-module.exports = fn => {
+export default () => {
     return (req, res, next) => {
     //   console.log("kfnv")
       

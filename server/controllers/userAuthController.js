@@ -1,8 +1,8 @@
-const jwt = require("jsonwebtoken");
+import jwt from "jsonwebtoken";
 
-const catchAsync = require("./../utils/catchAsync");
-const User = require("./../model/userAuthModel");
-const AppError = require("./../utils/appError");
+import catchAsync from "./../utils/catchAsync.js";
+import User from "./../model/userAuthModel.js";
+import AppError from "./../utils/appError.js";
 
 
 const signToken = (id) => {
@@ -36,7 +36,7 @@ const createSendToken = (user, statusCode, res) => {
 
 
 
-exports.signup = catchAsync(async (req, res, next) => {
+const signup = catchAsync(async (req, res, next) => {
   const newUser = await User.create({
     name: req.body.name,
     email: req.body.email,
@@ -48,7 +48,7 @@ exports.signup = catchAsync(async (req, res, next) => {
   createSendToken(newUser, 201, res);
 });
 
-exports.login = catchAsync(async (req, res, next) => {
+const login = catchAsync(async (req, res, next) => {
   // console.log(req.body)
   const { email, password } = req.body;
   if (!email || !password) {
@@ -70,7 +70,7 @@ exports.login = catchAsync(async (req, res, next) => {
 
 
 
-exports.protect = catchAsync(async (req, res, next) => {
+const protect = catchAsync(async (req, res, next) => {
   let token;
   //Checking if it contain token or not
   if (
@@ -105,7 +105,7 @@ exports.protect = catchAsync(async (req, res, next) => {
 });
 
 
-exports.isLoggedIn = async (req, res, next) => {
+const isLoggedIn = async (req, res, next) => {
   // console.log(req.cookies)
   if (req.cookies.jwt) {
     try {
@@ -133,5 +133,6 @@ exports.isLoggedIn = async (req, res, next) => {
   next();
 };
 
+export default {isLoggedIn, protect, login, signup};
 
 

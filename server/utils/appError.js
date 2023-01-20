@@ -11,5 +11,5 @@ class AppError  {
     }
   }
   
-  module.exports = AppError;
+  export default AppError;
   
