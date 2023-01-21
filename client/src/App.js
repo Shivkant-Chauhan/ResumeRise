@@ -15,7 +15,8 @@ import Projects from './components/Projects';
 // import DocumentStyle from './Components/DocumentStyle';
 import Preview from './components/Preview';
 import NotFound from './components/NotFound';
-import { useStore } from 'zustand';
+// import { useStore } from 'zustand';
+import Signup from './components/Signup/Signup';
 
 
 class App extends React.Component {
@@ -133,6 +134,7 @@ class App extends React.Component {
           <HashRouter>
             <Routes>
               <Route path='/' element={<Login />} />
+              <Route path='/signup' element={<Signup />} />
               <Route path='/resume' element={<Home />} />
               <Route path='/personalInfo' element={<PersonalInfo data={this.state.personalInfo} callback={this.updateInfo} newField={this.addRecord}/>} />
               <Route path='/education' element={<Education data={this.state.educationInfo} callback={this.updateInfo} newField={this.addRecord}/>} />
