@@ -146,17 +146,6 @@
 
 .hidden {display:none;}
 
-.btn {
-  font-size: 1em;
-  padding: 5px 10px; 
-  border-radius: 5px;
-  outline: none; 
-  text-decoration: none;
-  border: 1px solid transparent;
-  color: white;
-  background: red;
-  cursor: pointer;
-}
 .callout-btn{
   background: purple;
   color: white;
@@ -166,7 +155,7 @@
   color: white;
 }
 .next {
-  background:red;
+  background:r#6c63ff;
   color: white;
 }
 

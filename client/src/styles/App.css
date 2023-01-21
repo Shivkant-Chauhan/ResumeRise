@@ -2,3 +2,32 @@
   text-align: center;
 }
 
+.btn-primary{
+  display: flex;
+  justify-content: center;
+  padding: 14px 24px;
+  background: #6c63ff;
+  border: none;
+  width: 300px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 3px;
+  transition: all 0.3s;
+}
+
+.btn-primary:hover{
+  background: #584feb ;
+}
+
+input, textarea{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 12px 18px;
+  gap: 10px;
+  width: 260px;
+  border: 2px solid #e6e6e6;
+  border-radius: 4px;
+}

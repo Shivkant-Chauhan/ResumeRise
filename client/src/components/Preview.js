@@ -39,9 +39,9 @@ class Preview extends Component {
                 </div>
 
                 <div className="btn-group print-hide">
-                    <Link to="/references" className='btn prev'>Previous Section</Link>
-                    <button type="button" className='btn callout-btn' onClick={this.printCV}>Print</button>
-                    <Link to="/" className='btn next'>Home</Link>
+                    <Link to="/references" className='btn-primary prev'>Previous Section</Link>
+                    <button type="button" className='btn-primary callout-btn' onClick={this.printCV}>Print and Download</button>
+                    <Link to="/" className='btn-primary next'>Home</Link>
                 </div>
             </div>
         )

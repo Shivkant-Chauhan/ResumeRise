@@ -1,7 +1,6 @@
 import React, { Component } from 'react'; 
 import {Link} from "react-router-dom";
 import Navigation from './Navigation';
-import Footer from './Footer';
 
 class PersonalInfo extends Component {
 
@@ -58,17 +57,17 @@ class PersonalInfo extends Component {
                                 )
                             })}
                         </div>
-                        <button type="button"  id="personalInfo-websites-btn" onClick={this.props.newField} className="btn callout-btn">Add Website</button>
+                        <button type="button"  id="personalInfo-websites-btn" onClick={this.props.newField} className="btn-primary callout-btn">Add Website</button>
                         <div className='grid-1-col mt-2'>
                             <textarea placeholder="About text..." id="personalInfo-about-input" value={this.props.data.about} onChange={this.props.callback}></textarea>
                         </div>
                         <div className={`btn-group ${previewClass}`}>
-                            <Link to="/" className='btn prev'>Previous Section</Link>
-                            <Link to="/education" className='btn next'>Next Section</Link>
+                            <Link to="/" className='btn-primary prev'>Previous Section</Link>
+                            <Link to="/education" className='btn-primary next'>Next Section</Link>
                         </div>
                     </div>
                 </div>
-                <Footer />
+                
             </div>
         )
     }

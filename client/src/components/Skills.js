@@ -1,7 +1,7 @@
 import React, { Component } from 'react'; 
 import {Link} from "react-router-dom";
 import Navigation from './Navigation';
-import Footer from './Footer';
+
 
 class Skills extends Component {
 
@@ -42,15 +42,15 @@ class Skills extends Component {
                                         )
                             })}
                         </div>
-                        <button type="button"  id="skillInfo-skills-btn" onClick={this.props.newField} className="btn callout-btn">Add skill</button>
+                        <button type="button"  id="skillInfo-skills-btn" onClick={this.props.newField} className="btn-primary callout-btn">Add skill</button>
                         <div className={`btn-group ${previewClass}`}>
-                            <Link to="/projects" className='btn prev'>Previous Section</Link>
-                            <Link to="/references" className='btn next'>Next Section</Link>
+                            <Link to="/projects" className='btn-primary prev'>Previous Section</Link>
+                            <Link to="/references" className='btn-primary next'>Next Section</Link>
                         </div>
                     </div>
                 
                 </div>
-                <Footer />
+                
             </div>
         )
     }

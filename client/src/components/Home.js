@@ -10,12 +10,13 @@ class Home extends Component {
             <div>
                 <div>
                     <Navigation />
-                    <h1>resumeRise</h1>
+                    <h1>Welcome to Resu<span>me</span>Rise</h1>
                 </div>
                 <div className="grid-1-col mb-5 mt-5">
-                    <p>Please click to get started</p>
+                    <p>This cv builder uses react router dom to navigate between different sections.</p>
+                    
                 </div>
-                <Link to="/personalInfo" className='btn next'>Personal Information</Link>
+                <Link to="/personalInfo" className='btn-primary next'>Personal Information</Link>
             </div>
         )
     }

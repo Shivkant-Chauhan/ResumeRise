@@ -1,7 +1,6 @@
 import React, { Component } from 'react'; 
 import {Link} from "react-router-dom";
 import Navigation from './Navigation';
-import Footer from './Footer';
 
 class Projects extends Component {
 
@@ -34,6 +33,7 @@ class Projects extends Component {
                                     : <span key={`project-${index}`}></span>
                                 )
                         })}
+                    {/* <hr  className={`${previewClass}`}/> */}
                 </div>
                 
 
@@ -51,10 +51,10 @@ class Projects extends Component {
                                     </div>
                                 )
                     })}
-                    <button type="button"  id="projectInfo-project-btn" onClick={this.props.newField} className="mt-2 btn callout-btn">Add project</button>
+                    <button type="button"  id="projectInfo-project-btn" onClick={this.props.newField} className="mt-2 btn-primary callout-btn">Add project</button>
                     <div className={`btn-group ${previewClass}`}>
-                        <Link to="/career" className='btn prev'>Previous Section</Link>
-                        <Link to="/skills" className='btn next'>Next Section</Link>
+                        <Link to="/career" className='btn-primary prev'>Previous Section</Link>
+                        <Link to="/skills" className='btn-primary next'>Next Section</Link>
                     </div>
                     </div>
                 </div>
@@ -63,7 +63,7 @@ class Projects extends Component {
 
                 
                 
-                <Footer />
+                
             </div>
         )
     }
