@@ -1,0 +1,12 @@
+@media print {
+    .print-width{
+        width: 100%; 
+    }
+
+    .print-hide{
+        display: none;
+    }
+    .print-padding{
+        padding-top: 0;
+    }
+}

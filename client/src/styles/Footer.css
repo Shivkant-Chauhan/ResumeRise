@@ -1,0 +1,41 @@
+/***** Footer *****/
+Footer {
+    width: 100%; 
+    grid-column: 1/3; 
+    background: #191919; 
+    color: white;
+    padding: 20px;
+  }
+  
+  footer ul {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-evenly;
+  }
+  
+  footer li {
+    list-style-type: none;
+  }
+  
+  footer a {
+    color: white; 
+  }
+  
+  footer a>*{
+    transition: 0.2s;
+  }
+  
+  footer a:hover>* {
+    transform: scale(1.1);
+  }
+  footer .fa-youtube:hover{
+    color: red;
+  }
+  footer .fa-globe:hover{
+    color: rgb(129, 129, 214);
+  }
+  
+  footer img {
+    height: 50px; 
+    width: 50px; 
+  }
