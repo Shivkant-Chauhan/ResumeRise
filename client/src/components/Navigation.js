@@ -15,7 +15,6 @@ class Navigation extends Component {
                     <li title="Projects" className="nav-item"><NavLink to="/projects" className={({isActive}) => isActive? "nav-link active" : "nav-link"}/></li>
                     <li title="Skills" className="nav-item"><NavLink to="/skills" className={({isActive}) => isActive? "nav-link active" : "nav-link"}/></li>
                     <li title="References" className="nav-item"><NavLink to="/references" className={({isActive}) => isActive? "nav-link active" : "nav-link"}/></li>
-                    {/* <li title="Document Styles" className="nav-item"><NavLink to="/documentStyle" className={({isActive}) => isActive? "nav-link active" : "nav-link"}/></li> */}
                     <li title="Preview" className="nav-item"><NavLink to="/preview" className={({isActive}) => isActive? "nav-link active" : "nav-link"}/></li>
                 </ul>
             </div>

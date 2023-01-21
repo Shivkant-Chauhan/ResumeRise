@@ -5,6 +5,7 @@ import './styles/Footer.css';
 import './styles/Helper.css';
 import './styles/mediaQueries.css';
 import Login from './components/Login/Login';
+import Signup from './components/Signup/Signup';
 
 import Home from './components/Home';
 import PersonalInfo from './components/PersonalInfo';
@@ -134,6 +135,7 @@ class App extends React.Component {
           <HashRouter>
             <Routes>
               <Route path='/' element={<Login />} />
+              <Route path='/signup' element={<Signup />} />
               <Route path='/resume' element={<Home />} />
               <Route path='/personalInfo' element={<PersonalInfo data={this.state.personalInfo} callback={this.updateInfo} newField={this.addRecord}/>} />
               <Route path='/education' element={<Education data={this.state.educationInfo} callback={this.updateInfo} newField={this.addRecord}/>} />

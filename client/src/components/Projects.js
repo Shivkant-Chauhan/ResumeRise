@@ -34,7 +34,6 @@ class Projects extends Component {
                                     : <span key={`project-${index}`}></span>
                                 )
                         })}
-                    {/* <hr  className={`${previewClass}`}/> */}
                 </div>
                 
 
